@@ -1,9 +1,9 @@
-n = int(input())
-dic = {}
-for i in range(n):
-    names, *lines = input().split()
-    scores = list(map(float,lines))
-    dic[names] = scores
-query_name = input()
-ans = dic[query_name]
-print(f"{sum(ans)/len(ans):.2f}")
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    print(f"{sum(student_marks[query_name])/3:.2f}")

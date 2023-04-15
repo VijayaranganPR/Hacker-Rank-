@@ -1,38 +1,32 @@
-s = input()
-for ele in s:
-    if ele.isalnum():
-        print (True)
-        break
-else:
-    print(False)
-    
-    
-for ele in s:
-    if ele.isalpha():
-        print (True)
-        break
-else:
-    print(False)
-    
-for ele in s:
-    if ele.isdigit():
-        print (True)
-        break
-else:
-    print(False)
-    
-    
-for ele in s:
-    if ele.islower():
-        print (True)
-        break
-else:
-    print(False)
-    
-    
-for ele in s:
-    if ele.isupper():
-        print (True)
-        break
-else:
-    print(False)
+if __name__ == '__main__':
+    s = input()
+    for _ in s:
+        if _.isalnum():
+            print(True)
+            break
+    else:
+        print(False)
+    for _ in s:
+        if _.isalpha():
+            print(True)
+            break
+    else:
+        print(False)
+    for _ in s:
+        if _.isdigit():
+            print(True)
+            break
+    else:
+        print(False)
+    for _ in s:
+        if _.islower():
+            print(True)
+            break
+    else:
+        print(False)
+    for _ in s:
+        if _.isupper():
+            print(True)
+            break
+    else:
+        print(False)
