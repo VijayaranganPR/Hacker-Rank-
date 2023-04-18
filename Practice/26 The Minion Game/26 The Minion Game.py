@@ -1,20 +1,14 @@
-def minion_game(s):
-    vowels = 'AEIOU'
-
-    kevsc = 0
-    stusc = 0
-    for i in range(len(s)):
-        if s[i] in vowels:
-            kevsc += (len(s)-i)
+def minion_game(string):
+    vowels = 'aeiou'
+    length = len(string)
+    stuart, kevin = [0]*2
+    for i, letter in enumerate(string.lower()):
+        if (letter in vowels):
+            kevin += length - i
         else:
-            stusc += (len(s)-i)
-
-    if kevsc > stusc:
-        print ("Kevin", kevsc)
-    elif kevsc < stusc:
-        print ("Stuart", stusc)
-    else:
-        print ("Draw")
+            stuart += length - i
+    
+    print(f'Stuart {stuart}' if(stuart > kevin) else f'Kevin {kevin}' if (kevin > stuart) else 'Draw') 
 
 if __name__ == '__main__':
     s = input()
