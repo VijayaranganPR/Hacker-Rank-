@@ -1,6 +1,6 @@
-from itertools import product
+import itertools
 
-a = [int(i) for i in  input().split()]
-b = [int(i) for i in  input().split()]
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
 
-print(*list(product(a,b)))
+print(*itertools.product(A, B))
